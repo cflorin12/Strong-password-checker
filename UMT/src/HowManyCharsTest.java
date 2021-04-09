@@ -51,11 +51,6 @@ class HowManyCharsTest {
     void longPasswords(){
         //Repeating characters, uppercase, lowercase and digit missing
         //Example for fixing the password: ??1??a??A??a??a??a??
-        // 1) replace the third char in a sequence of repeating chars with a missing required char (uppercase,lowercase or digit)
-        // 2) delete the 3rd char in the remaining sequencing of repeating chars, until the password has 20 characters (3a)(or until
-        // there are no more sequences (3b) )
-        // 3a) If there are still sequences of repeating chars -> replace the 3rd char of each sequence with a different random char
-        // 3b) If the password still has more than 20 chars -> delete characters until the password has 20 chars
         assert Main.howManyChars("??????????????????????")==8;
 
         //Repeating characters, uppercase, lowercase and digit present
